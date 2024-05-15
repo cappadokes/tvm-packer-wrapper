@@ -177,7 +177,7 @@ int main(int argc, char **argv)
         duration = std::chrono::duration_cast<std::chrono::microseconds>(end - start);
     }
 
-    std::cout << duration;
+    std::cout << duration.count();
 
     std::vector<std::pair<size_t, std::string>> output;
     for (auto i : result)
